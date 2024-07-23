@@ -11,7 +11,7 @@ import img6 from '../assets/Asset 26.png';
 import img7 from '../assets/Asset 32.png';
 import { HiOutlineArrowCircleDown, HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
-const image = [
+const images = [
   { src: img, label: 'Gated Community' },
   { src: img1, label: '131 Apts, Stilt + 4 Floors', subLabel: 'ASEIS MIC Structure' },
   { src: img2, label: 'CCTV' },
