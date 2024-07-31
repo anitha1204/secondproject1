@@ -44,7 +44,7 @@ const NewsletterForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 mt-14">
+    <div className="flex flex-col items-center justify-center p-4 mt-8">
       <h2 className="text-2xl md:text-3xl text-gray-500 font-bold mb-6">Newsletter</h2>
       <form onSubmit={handleSubmit} className="w-full max-w-4xl">
         <div className="flex flex-wrap mb-6">

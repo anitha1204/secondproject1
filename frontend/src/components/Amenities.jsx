@@ -38,7 +38,7 @@ const Amenities = () => {
 
   return (
     <>
-      <section className="mt-[500px] md:mt-40 lg:mt-72 px-2">
+      <section className="mt-[570px] md:mt-40 lg:mt-72 px-2">
         <div className="text-center">
           <h1 className=' text-2xl md:text-3xl text-gray-500 font-bold'>Our Amenities</h1>
           <div className="flex flex-col items-center sm:hidden mt-4">
