@@ -80,7 +80,7 @@ const Home = () => {
               Book Now
             </button>
             <Link to="tel:+9123456789">
-              <button className="px-5 py-2 text-sm md:text-lg bg-black bg-opacity-60 rounded hover:bg-opacity-80">
+              <button className="px-7 py-2 text-sm md:text-lg bg-black bg-opacity-60 rounded hover:bg-opacity-80">
                 Contact Now
               </button>
             </Link>
