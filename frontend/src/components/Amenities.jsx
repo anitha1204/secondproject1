@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import img from '../assets/Asset 22.png';
 import img1 from '../assets/Asset 23.png';
@@ -15,10 +13,10 @@ const images = [
   { src: img, label: 'Gated Community' },
   { src: img1, label: '131 Apts, Stilt + 4 Floors', subLabel: 'ASEIS MIC Structure' },
   { src: img2, label: 'CCTV' },
-  { src: img3, label: '3000 sq.ft atrium - Open lawn' },
+  { src: img3, label: '3000 sq.ft atrium -',subLabel:' Open lawn' },
   { src: img4, label: 'Visitors Car Park' },
   { src: img5, label: '3 Automated Lifts', subLabel: 'For A Block' },
-  { src: img6, label: 'Designed by Professional Architects' },
+  { src: img6, label: 'Designed by ', subLabel:'Professional Architects' },
   { src: img7, label: '24hrs Security' }
 ];
 
@@ -40,7 +38,7 @@ const Amenities = () => {
 
   return (
     <>
-      <section className="mt-[365px] md:mt-40 lg:mt-60 px-2">
+      <section className="mt-[500px] md:mt-40 lg:mt-72 px-2">
         <div className="text-center">
           <h1 className=' text-2xl md:text-3xl text-gray-500 font-bold'>Our Amenities</h1>
           <div className="flex flex-col items-center sm:hidden mt-4">
@@ -54,10 +52,12 @@ const Amenities = () => {
               <p>ASEIS MIC Structure</p>
             </div>
           </div>
-          <div className="hidden sm:flex flex-wrap justify-center gap-8 mt-10">
+          <div className="hidden sm:flex flex-wrap justify-center mt-14 gap-10">
             {images.map((image, index) => (
-              <div key={index} className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
-                <img src={image.src} alt={image.label} className=" mb-2" />
+              <div key={index} className="flex flex-col items-center w-full sm:w-auto">
+                <div className="flex items-center">
+                  <img src={image.src} alt={image.label} className="mb-2 w-[30px] sm:w-[30px] md:w-[35px] lg:w-[40px] xl:w-[50px]" />
+                </div>
                 <p>{image.label}</p>
                 {image.subLabel && <p>{image.subLabel}</p>}
               </div>

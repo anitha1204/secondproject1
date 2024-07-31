@@ -1,29 +1,19 @@
-import React from 'react';
-import Home from './components/Home'
-import Hero from './components/Hero';
-import Amenities from './components/Amenities';
-import Uniqueness from './components/Uniqueness';
-import Specification from './components/Specification';
-import ImageGallery from './components/ImageGallery';
-import HousePlan from './components/HousePlan';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+
+import React from "react";
+import Home from "./components/Home";
 import { Toaster } from "react-hot-toast";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-      <Amenities />
-      <Uniqueness />
-      <Specification />
-      <ImageGallery />
-      <HousePlan />
-      <Hero />
-      <Contact />
-      <Footer />
-      <Toaster />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Toaster />
+      </div>
+    </Router>
   );
 }
 
