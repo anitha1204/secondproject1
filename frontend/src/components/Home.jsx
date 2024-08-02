@@ -57,7 +57,7 @@ const Home = () => {
       <div className="overflow">
         <section className="w-full h-screen relative">
           <img src={img} alt="Banner" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-60">
             <div className="absolute top-14 left-8 md:left-24 md:mr-auto">
               <img src={logo} alt="Logo" className="w-28 md:w-44" />
             </div>
