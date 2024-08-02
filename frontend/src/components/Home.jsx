@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import logo from "../assets/Logo 1.png";
-import img from "../assets/Banner.png";
+import img from "../assets/Banner1.png";
 import card1 from "../assets/Rectangle 4.png";
 import card2 from "../assets/Rectangle 5.png";
 import card3 from "../assets/Rectangle 6.png";
@@ -56,7 +56,10 @@ const Home = () => {
     <>
       <div className="overflow">
         <section className="w-full h-screen relative">
-          <img src={img} alt="Banner" className="w-full h-full object-cover" />
+          {/* <img src={img} alt="Banner" className="w-full h-full object-cover" /> */}
+          <div className="w-full h-full">
+      <img src={img} alt="Banner" className="w-full h-full object-cover" />
+    </div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
             <div className="absolute top-14 left-8 md:left-24 md:mr-auto">
               <img src={logo} alt="Logo" className="w-28 md:w-44" />

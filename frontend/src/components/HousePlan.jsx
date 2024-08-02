@@ -102,22 +102,17 @@ const HousePlan = () => {
         </div>
        
         {/* Right Side */}
-        <div className="w-full lg:w-1/2 flex flex-col lg:flex-row items-center justify-center relative mt-8 lg:mt-0">
-          <div className="w-full flex justify-center lg:hidden">
-            <div className="relative">
-              <img 
-                src={images[currentIndex]} 
-                alt={`Image ${currentIndex + 1}`} 
-                className="rounded shadow-lg max-w-full h-auto cursor-pointer transition-transform duration-300 ease-in-out transform" 
-                style={{ width: '300px', height: '300px' }} 
-                onClick={handleNext} 
-              />
-            </div>
+        <div className="w-full lg:w-1/2 flex flex-col items-center justify-center relative mt-8 lg:mt-0">
+          <div className="w-full flex justify-center">
+            <img 
+              src={images[currentIndex]} 
+              alt={`Image ${currentIndex + 1}`} 
+              className="rounded shadow-lg max-w-full h-auto cursor-pointer transition-transform duration-300 ease-in-out transform" 
+              style={{ width: '300px', height: '300px' }} 
+              onClick={handleNext} 
+            />
           </div>
-          <div className="hidden lg:flex lg:flex-row lg:space-x-4">
-            <img src={img1} alt="Image 1" className="rounded shadow-lg w-[350px] h-[400px]" />
-            <img src={img2} alt="Image 2" className="rounded shadow-lg w-[150px] h-[210px] lg:mt-20" />
-          </div>
+          
         </div>
       </div>
     </section>
